@@ -18,6 +18,7 @@ jobs:
           issue-body: "nothing"
           
   build:
+    needs: approvals
     runs-on: ubuntu-latest
 
     steps:
