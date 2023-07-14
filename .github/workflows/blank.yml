@@ -18,6 +18,7 @@ jobs:
           issue-body: "nothing"
           
   build:
+    if: ${{ always() }}
     needs: approvals
     runs-on: ubuntu-latest
 
