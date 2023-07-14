@@ -12,13 +12,11 @@ jobs:
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.TOKEN_GITHUB }}
-          approvers: madcloudeq
+          approvers: https://github.com/madcloudeq
           minimum-approvals: 1
           issue-title: "practice"
           issue-body: "nothing"
-          exclude-workflow-initiator-as-approvers: false
-          additional-approved-words: ''
-          additional-denied-words: ''
+
           
   build:
 
