@@ -16,9 +16,12 @@ jobs:
           minimum-approvals: 1
           issue-title: "practice"
           issue-body: "nothing"
+          exclude-workflow-initiator-as-approvers: false
+          additional-approved-words: ''
+          additional-denied-words: ''
           
   build:
-    if: ${{ always() }}
+
     needs: approvals
     runs-on: ubuntu-latest
 
