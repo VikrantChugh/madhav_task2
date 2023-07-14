@@ -10,12 +10,12 @@ on:
       workflow2_github_account:
         description: 'GitHub Account Owner'
         required: true
-        default: ':userName'
+        default: 'VikrantChugh'
 
       workflow2_repo_github:
         description: 'repo-name'
         required: true
-        default: ':repoName' 
+        default: 'madhav_task2.0' 
 
 jobs:
   build:
@@ -26,4 +26,9 @@ jobs:
       - name: Test
         run: |
          echo "hello"
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+        with: 
+          repository: VikrantChugh/madhav_task2.0
+          ref: 'main'
+          token: ${{ secrets.TOKEN_GITHUB }}
