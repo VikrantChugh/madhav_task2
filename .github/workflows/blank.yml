@@ -12,7 +12,7 @@ jobs:
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.TOKEN_GITHUB }}
-          approvers: VikrantChugh
+          approvers: swaranjalsingh
           minimum-approvals: 1
           issue-title: "practice"
           issue-body: "nothing"
