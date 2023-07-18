@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
  
 
-# jobs:
+jobs:
 #   approvals:
 #     runs-on: ubuntu-latest
 #     steps:
@@ -20,7 +20,7 @@ on:
           
   build:
 
-    needs: approvals
+ 
     runs-on: ubuntu-latest
 
     steps:
