@@ -8,7 +8,7 @@ jobs:
   approvals:
     runs-on: ubuntu-latest
     steps:
-      - name: madhav-approvals
+      - name: swara-approvals
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.TOKEN_GITHUB }}
