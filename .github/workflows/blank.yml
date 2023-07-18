@@ -5,17 +5,17 @@ on:
  
 
 jobs:
-#   approvals:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: madhav-approvals
-#         uses: trstringer/manual-approval@v1
-#         with:
-#           secret: ${{ secrets.TOKEN_GITHUB }}
-#           approvers: https://github.com/VikrantChugh
-#           minimum-approvals: 1
-#           issue-title: "practice"
-#           issue-body: "nothing"
+  approvals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: madhav-approvals
+        uses: trstringer/manual-approval@v1
+        with:
+          secret: ${{ secrets.TOKEN_GITHUB }}
+          approvers: VikrantChugh
+          minimum-approvals: 1
+          issue-title: "practice"
+          issue-body: "nothing"
 
           
   build:
